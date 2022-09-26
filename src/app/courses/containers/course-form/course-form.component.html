@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-toolbar color="primary"><span>Detalhes do Link</span></mat-toolbar>
+
+  <mat-card-content>
+    <form #form = "ngForm" class="min-width">
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Nome do Link</mat-label>
+        <input matInput type = "text" placeholder="Nome" name="nome" [(ngModel)] = "link.nome">
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>URL do Link</mat-label>
+        <input matInput type = "text" placeholder="Nome" name="url" [(ngModel)] = "link.url">
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary"  (click)="onSubmit(form)">Salvar</button>
+    <button mat-raised-button (click)="onCancel()">Cancelar</button>
+  </mat-card-actions>
+</mat-card>
