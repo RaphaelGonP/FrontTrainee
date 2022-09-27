@@ -43,7 +43,7 @@ Download API Json:https://github.com/RaphaelGonP/APITest
 *Após baixar o API Json, você deve inicializar ele com o seguinte comando no terminal : run backend.
 Download front end: https://github.com/RaphaelGonP/FrontTrainee
 
-*Após baixar o front end, entre no diretório `main/src/app/courses/services/courses.service.ts`, vá até a linha 13, e altere a variável API de 'https://api-traineejson.herokuapp.com/sites' para 'localhost:3000'.
+*Após baixar o front end, entre no diretório `main/src/app/sites/services/sites.service.ts`, vá até a linha 13, e altere a variável API de 'https://api-traineejson.herokuapp.com/sites' para 'localhost:3000'.
 
 *Logo em seguida, com o API Json aberto em outra janela, digite no terminal : npm start
 
