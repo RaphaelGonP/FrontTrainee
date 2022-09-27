@@ -27,7 +27,7 @@ A hospedagem foi dividida em duas etapas, e em dois hosts diferentes.
 A primeira parte da programação (Front), foi hospedada utilizando um site que disponibiliza a ferramente de forma gratuita : https://www.netlify.com/. O site fica no ar de forma permanente e todas as alterações que são feitas no github são atualizadas automaticamente.
 hospedagem do Site(front-end) : `https://taupe-bombolone-552d0d.netlify.app`.
 
-A segunda etapa foi hospedar o back-end, o API Fake, utilizei outro site, que também disponibilizou a ferramente de forma gratuita : https://dashboard.heroku.com. O site tambem manter hosteando sempre e igual ao netlify, todas as alterações feitas no github são atualizadas de forma automática para o site. Esse site é apenas para a troca de informação, quando entramos nele podemos ver de forma mais crua as informações das urls presentes no momento, que são ID, Nome, E URL.
+A segunda etapa foi hospedar o back-end, o API Fake, utilizei outro site, que também disponibilizou a ferramenta de forma gratuita : https://dashboard.heroku.com. O site tambem manter hosteando sempre e igual ao netlify, todas as alterações feitas no github são atualizadas de forma automática para o site. Esse site é apenas para a troca de informação, quando entramos nele podemos ver de forma mais crua as informações das urls presentes no momento, que são ID, Nome, E URL.
 hospedagem do API Json : `https://api-traineejson.herokuapp.com/sites`.
 
 # Erro
@@ -38,7 +38,7 @@ O único erro que não consegui resolver foi a conexão entre a API e a parte Fr
 
 Caso queira rodar o site e conferir o funcionamento completo dele, basta fazer o download do API que irei disponibilizar no final deste tópico, abrir a pasta do Fake API e digitar no terminal de comandos 'run npm start'. Logo em seguida, faça o download do front-end que também deixarei disponível.
 
-Download API Json:https://github.com/RaphaelGonP/APIFile
+Download API Json:https://github.com/RaphaelGonP/APITest
 
 *Após baixar o API Json, você deve inicializar ele com o seguinte comando no terminal : run backend.
 Download front end: https://github.com/RaphaelGonP/FrontTrainee
