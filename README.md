@@ -2,6 +2,12 @@
 
 Este projeto foi gerado pelo Angular (https://github.com/angular/angular-cli) versão 14.2.3.
 
+# API
+
+# Interface
+
+# Automatização
+
 # Hospedagem
 
 Digite no terminal 'run ng serve' para iniciar o programa, Ele por padrão será iniciado no `http:localhost:4200`. A aplicação será atualizada de forma automática quando você altera os arquivos.
