@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class CoursesService {
 
-  private readonly API = 'https://api-traineejson.herokuapp.com/sites';
+  private readonly API = 'http://api-traineejson.herokuapp.com/sites';
 
   constructor(private httpClient: HttpClient) { }
 
