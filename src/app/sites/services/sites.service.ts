@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class SitesService {
 
-  private readonly API = 'https://api-traineejson.herokuapp.com/sites';
+  private readonly API = 'https://badapitest.herokuapp.com/sites';
 
   constructor(private httpClient: HttpClient) { }
 
