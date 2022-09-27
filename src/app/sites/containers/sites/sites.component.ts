@@ -33,7 +33,7 @@ export class SitesComponent implements OnInit {
     this.sites$ = this.sitesService.list()
       .pipe(
         catchError(error => {
-          this.onError('Erro ao carregar cursos.');
+          this.onError('Erro ao carregar links.');
           return of([])
         })
       );
@@ -42,7 +42,7 @@ export class SitesComponent implements OnInit {
   carregarLinks(){
     this.sitesService.getAll().subscribe({
     
-      error: () => this.onError('Erro ao tentar caregar curso.')
+      error: () => this.onError('Erro ao tentar caregar link.')
     });
   }
 
@@ -68,13 +68,13 @@ export class SitesComponent implements OnInit {
     this.sitesService.remove(site.id).subscribe({
       next: () => {
         this.refresh();
-        this.snackBar.open('Curso removido com sucesso!', 'X', {
+        this.snackBar.open('Link removido com sucesso!', 'X', {
           duration: 5000,
           verticalPosition: 'top',
           horizontalPosition: 'center'
         });
       },
-      error: () => this.onError('Erro ao tentar remover curso.')
+      error: () => this.onError('Erro ao tentar remover link.')
     });
   }
 
