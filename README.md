@@ -1,7 +1,7 @@
 # FrontStockBag-Trainee Test
 
 Este projeto foi gerado pelo Angular (https://github.com/angular/angular-cli) versão 14.2.3.
-Você pode acessar e utilizar o site hospedado em: `https://taupe-bombolone-552d0d.netlify.app/`!
+Você pode acessar e utilizar o site hospedado em: https://taupe-bombolone-552d0d.netlify.app/!
 
 # API
 
