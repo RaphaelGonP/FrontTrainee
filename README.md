@@ -10,8 +10,10 @@ Foi criada uma API fake utilizando o json-server, que foi utilizada como uma esp
 
 A interface foi criada utilizando a ferramenta Angular CLI, onde foi feito o template utilizando html, scss, e typescript. Nela também foi criado o service para a comunicação com API.
 Através da interface é possível adicionar, editar, e excluir as urls.
+
 Os botões, animações e ícones foram importados através de bibliotecas pré-definidas do Angular (mat-icon, mat-spinner, etc).
 Foram criadas rotas para navegação do site e transferência de informações.
+
 O ID dos Sites foi usado para editar as urls, quando clicamos no botão de editar ou de adicionar ele vai para uma página onde ela analisa se onde você clicou existe um ID ou se está somando mais um, se existe ele vai puxar os dados dessa url existente pelo ID dela, e você podera editar, caso não exista ela apenas somará +1 e você irá criar um novo site salvo.
 
 # Automatização
@@ -21,6 +23,7 @@ Infelizmente não consegui utilizar o webcrowler no meu projeto.
 # Hospedagem
 
 A hospedagem foi dividida em duas etapas, e em dois hosts diferentes. 
+
 A primeira parte da programação (Front), foi hospedada utilizando um site que disponibiliza a ferramente de forma gratuita : https://www.netlify.com/. O site fica no ar de forma permanente e todas as alterações que são feitas no github são atualizadas automaticamente.
 hospedagem do Site(front-end) : `https://taupe-bombolone-552d0d.netlify.app`.
 
