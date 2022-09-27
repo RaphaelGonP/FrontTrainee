@@ -37,7 +37,7 @@ hospedagem do API Json : https://api-traineejson.herokuapp.com/sites.
 
 Caso queira rodar o site de forma local, basta fazer o download do API que irei disponibilizar no final deste tópico, abrir a pasta do Fake API e digitar no terminal de comandos 'run npm start'. Logo em seguida, faça o download do front-end que também deixarei disponível.
 
-Download API Json:https://github.com/RaphaelGonP/APITest
+Download API Json : https://github.com/RaphaelGonP/APIFile.
 
 *Após baixar o API Json, você deve inicializar ele com o seguinte comando no terminal : run backend.
 Download front end: https://github.com/RaphaelGonP/FrontTrainee
