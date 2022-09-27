@@ -6,21 +6,21 @@ import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
 import { ErrorDialogComponent } from '../../../shared/components/error-dialog/error-dialog.component';
-import { Link } from '../../model/course';
-import { CoursesService } from '../../services/courses.service';
+import { Link } from '../../model/site';
+import { SitesService } from '../../services/sites.service';
 
 @Component({
-  selector: 'app-courses',
-  templateUrl: './courses.component.html',
-  styleUrls: ['./courses.component.scss']
+  selector: 'app-sites',
+  templateUrl: './sites.component.html',
+  styleUrls: ['./sites.component.scss']
 })
-export class CoursesComponent implements OnInit {
+export class SitesComponent implements OnInit {
 
-  courses$: Observable<Link[]> | null = null;
-  courses: Link[] = [];
+  sites$: Observable<Link[]> | null = null;
+  sites: Link[] = [];
 
   constructor(
-    private coursesService: CoursesService,
+    private sitesService: SitesService,
     public dialog: MatDialog,
     private router: Router,
     private route: ActivatedRoute,
@@ -30,7 +30,7 @@ export class CoursesComponent implements OnInit {
   }
 
   refresh() {
-    this.courses$ = this.coursesService.list()
+    this.sites$ = this.sitesService.list()
       .pipe(
         catchError(error => {
           this.onError('Erro ao carregar cursos.');
@@ -40,7 +40,7 @@ export class CoursesComponent implements OnInit {
   }
 
   carregarLinks(){
-    this.coursesService.getAll().subscribe({
+    this.sitesService.getAll().subscribe({
     
       error: () => this.onError('Erro ao tentar caregar curso.')
     });
@@ -60,12 +60,12 @@ export class CoursesComponent implements OnInit {
     this.router.navigate(['new'], { relativeTo: this.route });
   }
 
-  onEdit(course: Link) {
-    this.router.navigate(['edit', course.id], { relativeTo: this.route });
+  onEdit(site: Link) {
+    this.router.navigate(['edit', site.id], { relativeTo: this.route });
   }
 
-  onRemove(course: Link) {
-    this.coursesService.remove(course.id).subscribe({
+  onRemove(site: Link) {
+    this.sitesService.remove(site.id).subscribe({
       next: () => {
         this.refresh();
         this.snackBar.open('Curso removido com sucesso!', 'X', {

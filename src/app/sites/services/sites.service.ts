@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Link } from '../model/course';
+import { Link } from '../model/site';
 import { delay, first, tap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CoursesService {
+export class SitesService {
 
   private readonly API = 'http://localhost:3000/sites';
 
@@ -19,7 +19,7 @@ export class CoursesService {
       .pipe(
         first(),
          delay(500),
-        tap(courses => console.log(courses))
+        tap(sites => console.log(sites))
       );
   }
 

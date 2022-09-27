@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CourseResolver } from './course.resolver';
+import { SiteResolver } from './site.resolver';
 
-describe('CourseResolver', () => {
-  let resolver: CourseResolver;
+describe('SiteResolver', () => {
+  let resolver: SiteResolver;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    resolver = TestBed.inject(CourseResolver);
+    resolver = TestBed.inject(SiteResolver);
   });
 
   it('should be created', () => {

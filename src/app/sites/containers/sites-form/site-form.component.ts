@@ -2,18 +2,18 @@ import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute } from '@angular/router';
-import { Link } from '../../model/course';
-import { CoursesService } from '../../services/courses.service';
+import { Link } from '../../model/site';
+import { SitesService } from '../../services/sites.service';
 
 @Component({
-  selector: 'app-course-form',
-  templateUrl: './course-form.component.html',
-  styleUrls: ['./course-form.component.scss']
+  selector: 'app-site-form',
+  templateUrl: './site-form.component.html',
+  styleUrls: ['./site-form.component.scss']
 })
-export class CourseFormComponent implements OnInit {
+export class SiteFormComponent implements OnInit {
 
   constructor(
-    private service: CoursesService,
+    private service: SitesService,
     private snackBar: MatSnackBar,
     private location: Location,
     private route: ActivatedRoute) {

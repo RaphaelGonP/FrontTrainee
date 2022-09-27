@@ -2,15 +2,15 @@ import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { Observable, of } from 'rxjs';
 
-import { Link } from '../model/course';
-import { CoursesService } from '../services/courses.service';
+import { Link } from '../model/site';
+import { SitesService } from '../services/sites.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CourseResolver implements Resolve<Link> {
+export class SiteResolver implements Resolve<Link> {
 
-  constructor(private service: CoursesService) { }
+  constructor(private service: SitesService) { }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Link> {
     if (route.params && route.params['id']) {

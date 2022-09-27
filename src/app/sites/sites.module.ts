@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
-import { CoursesListComponent } from './components/courses-list/courses-list.component';
-import { CoursesComponent } from './containers/courses/courses.component';
-import { CourseFormComponent } from './containers/course-form/course-form.component';
-import { CoursesRoutingModule } from './courses-routing.module';
+import { SitesListComponent } from './components/sites-list/sites-list.component';
+import { SitesComponent } from './containers/sites/sites.component';
+import { SiteFormComponent } from './containers/sites-form/site-form.component';
+import { SitesRoutingModule } from './sites-routing.module';
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
@@ -19,13 +19,13 @@ import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
-    CoursesComponent,
-    CourseFormComponent,
-    CoursesListComponent
+    SitesComponent,
+    SiteFormComponent,
+    SitesListComponent
   ],
   imports: [
     CommonModule,
-    CoursesRoutingModule,
+    SitesRoutingModule,
     ReactiveFormsModule,
     MatTableModule,
     MatIconModule,
@@ -39,4 +39,4 @@ import { MatInputModule } from '@angular/material/input';
     MatInputModule
   ]
 })
-export class CoursesModule { }
+export class SitesModule { }

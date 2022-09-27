@@ -1,22 +1,22 @@
-<mat-table [dataSource]="courses">
+<mat-table [dataSource]="sites">
   <!-- Name Column -->
   <!-- <ng-container matColumnDef="id">
     <mat-header-cell *matHeaderCellDef>id</mat-header-cell>
-    <mat-cell *matCellDef="let course">{{ course.id}}</mat-cell>
+    <mat-cell *matCellDef="let site">{{ site.id}}</mat-cell>
   </ng-container> -->
 
   <!-- Category Column -->
   <ng-container matColumnDef="nome">
     <mat-header-cell *matHeaderCellDef>Nome</mat-header-cell>
-    <mat-cell *matCellDef="let course">
-      {{ course.nome }}
+    <mat-cell *matCellDef="let site">
+      {{ site.nome }}
     </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="url">
     <mat-header-cell *matHeaderCellDef>URL</mat-header-cell>
-    <mat-cell *matCellDef="let course">
-      {{ course.url }}
+    <mat-cell *matCellDef="let site">
+      {{ site.url }}
     </mat-cell>
   </ng-container>
 
@@ -28,13 +28,13 @@
       </button>
     </mat-header-cell>
 
-    <mat-cell *matCellDef="let course" class="action-column">
+    <mat-cell *matCellDef="let site" class="action-column">
       <button mat-icon-button color="primary" aria-label="Editar link">
-        <mat-icon (click)="onEdit(course)">edit</mat-icon>
+        <mat-icon (click)="onEdit(site)">edit</mat-icon>
       </button>
 
       <button mat-icon-button color="warn" aria-label="Remover link">
-        <mat-icon (click)="onDelete(course)">delete</mat-icon>
+        <mat-icon (click)="onDelete(site)">delete</mat-icon>
       </button>
     </mat-cell>
   </ng-container>

@@ -1,15 +1,15 @@
 import { Component, EventEmitter, Input, OnInit, Output, ɵɵqueryRefresh } from '@angular/core';
 
-import { Link } from '../../model/course';
+import { Link } from '../../model/site';
 
 @Component({
-  selector: 'app-courses-list',
-  templateUrl: './courses-list.component.html',
-  styleUrls: ['./courses-list.component.scss']
+  selector: 'app-sites-list',
+  templateUrl: './sites-list.component.html',
+  styleUrls: ['./sites-list.component.scss']
 })
-export class CoursesListComponent implements OnInit {
+export class SitesListComponent implements OnInit {
 
-  @Input() courses: Link[] = [];
+  @Input() sites: Link[] = [];
   @Output() add = new EventEmitter(false);
   @Output() edit = new EventEmitter(false);
   @Output() remove = new EventEmitter(false);

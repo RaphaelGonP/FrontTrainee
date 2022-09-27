@@ -7,7 +7,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CoursesModule } from './courses/courses.module';
+import { SitesModule } from './sites/sites.module';
 import { SharedModule } from './shared/shared.module';
 import { UrlComponent } from './url/url.component';
 
@@ -23,7 +23,7 @@ import { UrlComponent } from './url/url.component';
     MatToolbarModule,
     HttpClientModule,
     SharedModule,
-    CoursesModule,
+    SitesModule,
     MatProgressSpinnerModule
   ],
   providers: [],
