@@ -36,7 +36,7 @@ O único erro que não consegui resolver foi a conexão entre a API e a parte Fr
 
 # Rodando o site de forma Local
 
-Caso queira rodar o site e conferir o funcionamento completo dele, basta fazer o download do API que irei disponibilizar no final deste tópico, abrir a pasta do Fake API e digitar no terminal de comandos 'run npm start'. Logo em seguida, faça o download do front-end que também deixarei disponível.
+Caso queira rodar o site de forma local, basta fazer o download do API que irei disponibilizar no final deste tópico, abrir a pasta do Fake API e digitar no terminal de comandos 'run npm start'. Logo em seguida, faça o download do front-end que também deixarei disponível.
 
 Download API Json:https://github.com/RaphaelGonP/APITest
 
