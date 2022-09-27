@@ -36,10 +36,14 @@ O único erro que não consegui resolver foi a conexão entre a API e a parte Fr
 Caso queira rodar o site e conferir o funcionamento completo dele, basta fazer o download do API que irei disponibilizar no final deste tópico, abrir a pasta do Fake API e digitar no terminal de comandos 'run npm start'. Logo em seguida, faça o download do front-end que também deixarei disponível.
 
 Download API Json:https://github.com/RaphaelGonP/APIFile
+
 *Após baixar o API Json, você deve inicializar ele com o seguinte comando no terminal : run backend.
 Download front end: https://github.com/RaphaelGonP/FrontTrainee
+
 *Após baixar o front end, entre no diretório `main/src/app/courses/services/courses.service.ts`, vá até a linha 13, e altere a variável API de 'https://api-traineejson.herokuapp.com/sites' para 'localhost:3000'.
+
 *Logo em seguida, com o API Json aberto em outra janela, digite no terminal : npm start
+
 *Entre no site que o terminal vai informar.
 
 # Projeto
